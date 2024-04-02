@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: ee.ut.math.tvt.salessystem.logic.ShoppingCartTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in ee.ut.math.tvt.salessystem.logic.ShoppingCartTest
+ee.ut.math.tvt.salessystem.logic.ShoppingCartTest.testAddItemWithSoldItemWhereGetPriceIsZero  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "ee.ut.math.tvt.salessystem.dataobjects.SoldItem.getQuantity()" is null
+	at ee.ut.math.tvt.salessystem.logic.ShoppingCart.addItem(ShoppingCart.java:25)
+	at ee.ut.math.tvt.salessystem.logic.ShoppingCartTest.testAddItemWithSoldItemWhereGetPriceIsZero(ShoppingCartTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:288)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:282)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
